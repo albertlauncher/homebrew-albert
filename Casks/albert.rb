@@ -1,10 +1,10 @@
 cask "albert" do
  # arch arm: "12-m1", intel: "10"
 
-  version "0.26.4"
-  sha256 :no_check
-  #sha256 arm:   "dfbed21dbc117116d12d5200bf51f5d3bd358052b7d17c350fa1f6828f0e9647",
-  #       intel: "dfbed21dbc117116d12d5200bf51f5d3bd358052b7d17c350fa1f6828f0e9647"
+  version "0.26.7"
+  #sha256 :no_check
+  sha256 arm:   "d63ce231cd34cee639fd11a5deb54081d01e3b6cb73e36c0476a81739cae9e7d",
+         intel: "cb5514ec401f66ba4d12124ae8c2126d7358fefc6ec46c018e516b38337f60d9"
 
   url "https://github.com/albertlauncher/albert/releases/download/v#{version}/Albert-v#{version}.dmg",
       verified: "github.com/albertlauncher/albert/"
