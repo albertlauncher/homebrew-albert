@@ -1,4 +1,4 @@
-cask "Albert" do
+cask "albert" do
  # arch arm: "12-m1", intel: "10"
 
   version "0.26.4"
