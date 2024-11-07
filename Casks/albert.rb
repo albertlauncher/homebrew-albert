@@ -29,4 +29,8 @@ cask "albert" do
     E.g. the calculator requires libqalculate: Install it, restart Albert and enable the plugin.
   EOS
 
+  caveats do
+    unsigned_accessibility
+  end
+
 end
