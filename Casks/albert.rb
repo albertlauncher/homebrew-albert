@@ -23,6 +23,11 @@ cask "albert" do
 
   app "Albert.app"
 
+  postflight do
+    system_command "/usr/bin/codesign",
+                 args: ["--force", "--deep", "--sign", "-", "/Applications/Albert.app"]
+  end
+
   caveats <<~EOS
     Note that this bundle is not selfcontained, but rather uses shared libraries provided by homebrew.
     Also plugins may introduce additional dependencies you may have to install using homebrew.
