@@ -24,8 +24,13 @@ cask "albert" do
   app "Albert.app"
 
   postflight do
+
+    system_command "xattr",
+             args: ["-d", "com.apple.quarantine", "/Applications/Albert.app"]
+
     system_command "/usr/bin/codesign",
-                 args: ["--force", "--deep", "--sign", "-", "/Applications/Albert.app"]
+             args: ["--force", "--deep", "--sign", "-", "/Applications/Albert.app"]
+
   end
 
   caveats <<~EOS
