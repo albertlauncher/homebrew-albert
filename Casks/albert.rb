@@ -1,12 +1,12 @@
 cask "albert" do
- # arch arm: "12-m1", intel: "10"
+  arch arm: "arm64", intel: "x86-64"
 
   version "0.26.7"
   #sha256 :no_check
   sha256 arm:   "d63ce231cd34cee639fd11a5deb54081d01e3b6cb73e36c0476a81739cae9e7d",
          intel: "cb5514ec401f66ba4d12124ae8c2126d7358fefc6ec46c018e516b38337f60d9"
 
-  url "https://github.com/albertlauncher/albert/releases/download/v#{version}/Albert-v#{version}.dmg",
+  url "https://github.com/albertlauncher/albert/releases/download/v#{version}/Albert-v#{version}-#{arch}.dmg",
       verified: "github.com/albertlauncher/albert/"
   name "Albert"
   desc "Plugin-based keyboard launcher"
