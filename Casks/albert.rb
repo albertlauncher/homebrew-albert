@@ -1,5 +1,5 @@
 cask "albert" do
-  arch arm: "arm64", intel: "x86-64"
+  arch arm: "arm64", intel: "x86_64"
 
   # Dont touch, updated by github action
   version "0.27.5"
