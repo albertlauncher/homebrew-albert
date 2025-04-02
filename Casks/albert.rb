@@ -2,8 +2,8 @@ cask "albert" do
   arch arm: "arm64", intel: "x86_64"
 
   # Dont touch, updated by github action
-  version "0.27.5"
-  sha256 arm: "cb9a651f8999265dce25ea08a253603ad2486eb2f55a123020cb4925a2b31c34", intel: "bfa5e75f891d752763de1d1df176c5ba1d3e949fff4fb8294a197023be192094"
+  version "0.27.7"
+  sha256 arm: "835ff22d58d4fe662292f5266086ffa6b9dfae159822f8aa155277e7a38b77df", intel: "d47edf811b6772de50f5a29c7539d5bd8fd9a458f90dcaa88d24b67f4b68a0d8"
 
   url "https://github.com/albertlauncher/albert/releases/download/v#{version}/Albert-v#{version}-#{arch}.dmg",
       verified: "github.com/albertlauncher/albert/"
@@ -16,7 +16,7 @@ cask "albert" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: ">= :catalina"
   depends_on formula: "qt6"
   depends_on formula: "libqalculate"
 
