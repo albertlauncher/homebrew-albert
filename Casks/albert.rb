@@ -19,6 +19,7 @@ cask "albert" do
   depends_on macos: ">= :catalina"
   depends_on formula: "qt6"
   depends_on formula: "libqalculate"
+  depends_on formula: "qtkeychain"
 
   app "Albert.app"
 
