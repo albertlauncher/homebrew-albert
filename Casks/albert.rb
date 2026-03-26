@@ -26,7 +26,8 @@ cask "albert" do
   postflight do
 
     system_command "xattr",
-             args: ["-d", "com.apple.quarantine", "/Applications/Albert.app"]
+             args: ["-d", "com.apple.quarantine", "/Applications/Albert.app"],
+             must_succeed: false
 
     system_command "/usr/bin/codesign",
              args: ["--force", "--deep", "--sign", "-", "/Applications/Albert.app"]
