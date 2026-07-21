@@ -16,7 +16,7 @@ cask "albert" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
   depends_on formula: "qt6"
   depends_on formula: "libqalculate"
   depends_on formula: "qtkeychain"
