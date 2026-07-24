@@ -2,8 +2,8 @@ cask "albert" do
   arch arm: "arm64", intel: "x86_64"
 
   # Dont touch, updated by github action
-  version "34.0.10"
-  sha256 arm: "323e1ef0c1f6d23558585ba1b6cffaa32dadbc2e9646ca36dd8a4fe9bbf5d971", intel: "415dac86faaf7453ddaab71f5148e07d876ffff4d6674f1adaf0962c06e9cdf8"
+  version "35.0.0"
+  sha256 arm: "24fae084b1887ae039d2e06ee18966b5c6e98719baa46bba4db6a43c2839969a", intel: "3e985abba70366904b9db664a882d0795057776a9efe9fc78a60efd37dc9b6a1"
 
   url "https://github.com/albertlauncher/albert/releases/download/v#{version}/Albert-v#{version}-#{arch}.dmg",
       verified: "github.com/albertlauncher/albert/"
