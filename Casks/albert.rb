@@ -20,6 +20,7 @@ cask "albert" do
   depends_on formula: "qt6"
   depends_on formula: "libqalculate"
   depends_on formula: "qtkeychain"
+  depends_on formula: "qcoro6"
 
   app "Albert.app"
 
