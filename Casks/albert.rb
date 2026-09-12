@@ -3,7 +3,6 @@ cask "albert" do
 
   # Dont touch, updated by github action
   version "35.1.0"
-  revision 1
   sha256 arm: "b23543a0a2c99f4950c2d24eb394d39c84faf52dfa0665b01a2dfa925e7fc041", intel: "c7fd5eebea560a5aa4cd73eb5d532113a1b952ed1e7cb3668f0b703f9db4ab15"
 
   url "https://github.com/albertlauncher/albert/releases/download/v#{version}/Albert-v#{version}-#{arch}.dmg",
