@@ -24,12 +24,12 @@ cask "albert" do
 
   postflight_steps do
 
-    system_command "xattr",
-             args: ["-d", "com.apple.quarantine", "/Applications/Albert.app"],
-             must_succeed: false
+    run "/usr/bin/xattr",
+        args: ["-d", "com.apple.quarantine", "{{appdir}}/Albert.app"],
+        must_succeed: false
 
-    system_command "/usr/bin/codesign",
-             args: ["--force", "--deep", "--sign", "-", "/Applications/Albert.app"]
+    run "/usr/bin/codesign",
+        args: ["--force", "--deep", "--sign", "-", "{{appdir}}/Albert.app"]
 
   end
 
